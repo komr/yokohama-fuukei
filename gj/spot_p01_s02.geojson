@@ -1,0 +1,105 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9",
+        "name": "山下公園",
+        "alias": [
+          "やましたこうえん",
+          "ヤマシタコウエン",
+          "Yamashita Park"
+        ],
+        "image": "<a href='./images/YamashitaPark_0.jpg' target='ref'><img src='./images/YamashitaPark_0s.jpg' class='spot-img-container' border='1'></a>",
+        "description": "関東大震災時の瓦礫などを埋立て造成し、昭和5年（1930）に開園した日本最初の本格的な臨海公園。<br>埋立前の海岸通りに面した海岸は遠浅で、潮が引いて磯場が現れ、潮干狩りや魚釣りが行われていた。<br>埋立てに際しては、最初に護岸が造られ、その内側に瓦礫を入れることにより行われたので、今見られる護岸は当時のもの。",
+        "spotInfos": [
+          {
+            "title" : "山下公園",
+            "URL" : "<a href='./images/YamashitaPark_1.jpg' target='ref'><img src='./images/YamashitaPark_1s.jpg' class='spot-img-container'></a>",
+            "description" : "説明１"
+          },
+          {
+            "title" : "潮位標尺",
+            "URL" : "<a href='./images/YamashitaPark_2.jpg' target='ref'><img src='./images/YamashitaPark_2s.jpg' class='spot-img-container'></a>",
+            "description" : "説明２"
+          }
+        ],
+				"map_coordinates": {
+					"map_1": [65.76, -6.33],
+					"map_2": [139.649416, 35.446516]
+				},
+        "icon_style": "circle_s02r"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [65.76, -6.33]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7",
+        "name": "山下公園前水質浄化実験海域",
+        "alias": [
+          "Water Purification Experiment Area in front of Yamashita park",
+          "やましたこうえんまえすいしつじょうかじっけんかいいき",
+          "ヤマシタコウエンマエスイシツジョウカジッケンカイイキ"
+        ],
+        "image": "<a href='./images/WaterPurificationExperimentArea_0.jpg' target='ref'><img src='./images/WaterPurificationExperimentArea_0s.jpg' class='spot-img-container'></a>",
+        "description": "テラスの前、100m位までの海域で、水質浄化に向けた取組みが、平成25年（2013）から横浜市環境科学研究所とJFEスチール（株）との公民連携で行われ、かなりの成果が得られている。<br><a href='https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kankyohozen/kansoku/science/shiryo/youshi.files/0123_20190305.pdf' target='ref'>山下公園前海域の水質浄化に向けた公民連携の取組（横浜市環境科学研究所）</a>",
+        "spotInfos": [
+          {
+            "title" : "バルコニー下",
+            "URL" : "<a href='./images/WaterPurificationExperimentArea_1.jpg' target='ref'><img src='./images/WaterPurificationExperimentArea_1s.jpg' class='spot-img-container'></a>",
+            "description" : "説明１"
+          }
+        ],
+				"map_coordinates": {
+					"map_1": [49.82, -6.95],
+					"map_2": [139.650339, 35.446532]
+				},
+        "icon_style": "circle_s02r"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.82, -6.95]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "15",
+        "name": "氷川丸",
+        "alias": [
+          "Hikawa Maru",
+          "ひかわまる",
+          "ヒカワマル"
+        ],
+        "image": "<a href='./images/hikawamaru_0.jpg' target='ref'><img src='./images/hikawamaru_0s.jpg' class='spot-img-container' border='1'></a>",
+        "description": "1961年から現在地に係留。スクリューは外され、船体は固定されているため、船扱いとはならず、船籍はない。<br>",
+        "spotInfos": [
+          {
+            "title" : "",
+            "URL" : "<a href='./images/hikawamaru_1.jpg' target='ref'><img src='./images/hikawamaru_1s.jpg' class='spot-img-container' border='1'></a>",
+            "description" : "氷川丸側面"
+          },
+          {
+            "title" : "氷川丸後部",
+            "URL" : "<a href='./images/hikawamaru_2.jpg' target='ref'><img src='./images/hikawamaru_2s.jpg' class='spot-img-container' border='1'></a>",
+            "description" : "説明１"
+          }
+        ],
+        "map_coordinates": {
+          "map_1": [45.03,-3.37],
+          "map_2": [139.651241, 35.446673]
+        },
+          "icon_style": "circle_s02r"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [45.03,-3.37]
+      }
+    }
+  ]
+}

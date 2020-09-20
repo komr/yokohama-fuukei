@@ -1,0 +1,88 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5",
+        "name": "横浜税関",
+        "alias": [
+          "Yokohama Customs",
+          "よこはまぜいかん",
+          "ヨコハマゼイカン"
+        ],
+        "image": "<a href='./images/Customs_0.jpg' target='ref'><img src='./images/Customs_0s.jpg' width=300></a>",
+        "description": "地上高：51.46 m、地上5階<br>1階に資料展示室「クイーンのひろば」。<br><a href='https://www.customs.go.jp/yokohama/museum/tenjishitsu.htm' target='ref'>資料展示室「クイーンのひろば」の見学（横浜税関）</a>",
+        "narration": "ここは横浜税関です。",
+        "interval": "5",
+        "spotInfos": [
+          {
+            "title" : "クイーンの塔",
+            "URL" : "<a href='./images/Customs_1.jpg' target='ref'><img src='./images/Customs_1s.jpg' width=300></a>",
+            "description" : ""
+          },
+          {
+            "title" : "旧特別会議室",
+            "URL" : "<a href='./images/Customs_2.jpg' target='ref'><img src='./images/Customs_2s.jpg' width=300></a>",
+            "description" : ""
+          },
+          {
+            "title" : "旧特別会議室案内パネル",
+            "URL" : "<a href='./images/Customs_3.jpg' target='ref'><img src='./images/Customs_3s.jpg' width=300></a>",
+            "description" : ""
+          }
+        ],
+				"map_coordinates": {
+					"map_1": [93.72,-4.74],
+					"map_2": [139.642241, 35.449200]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [93.72,-4.74]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9",
+        "name": "大さん橋",
+        "alias": [
+          "大桟橋",
+          "おおさんばし",
+          "オオサンバシ",
+          "Oosanbashi Pier"
+        ],
+        "image": "<a href='./images/Oosanbashi_0.jpg' target='ref'><img src='./images/Oosanbashi_0s.jpg' class='spot-img-container'></a>",
+        "description": "地上高：15 m<br>",
+        "spotInfos": [
+          {
+            "title" : "大さん橋全景",
+            "URL" : "<a href='./images/Oosanbashi_1.jpg' target='ref'><img src='./images/Oosanbashi_1s.jpg' class='spot-img-container'></a>",
+            "description" : "説明１"
+          },
+          {
+            "title" : "大さん橋赤レンガ側",
+            "URL" : "<a href='./images/Oosanbashi_2.jpg' target='ref'><img src='./images/Oosanbashi_2s.jpg' class='spot-img-container'></a>",
+            "description" : "説明２"
+          },
+          {
+            "title" : "大さん橋象の鼻側",
+            "URL" : "<a href='./images/Oosanbashi_3.jpg' target='ref'><img src='./images/Oosanbashi_3s.jpg' class='spot-img-container'></a>",
+            "description" : "説明３"
+          }
+        ],
+				"map_coordinates": {
+					"map_1": [116.96,-5.45],
+					"map_2": [139.647492, 35.451426]
+				},
+        "icon_style": "circle_s01r"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.96,-5.45]
+      }
+    }
+  ]
+}

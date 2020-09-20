@@ -1,0 +1,196 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "name": "横浜税関",
+        "alias": [
+          "Yokohama Customs",
+          "よこはまぜいかん",
+          "ヨコハマゼイカン"
+        ],
+        "image": "<a href='./images/Customs_0.jpg' target='ref'><img src='./images/Customs_0s.jpg' width=300></a>",
+        "description": "地上高：51.46 m、地上5階<br>1階に資料展示室「クイーンのひろば」。<br><a href='https://www.customs.go.jp/yokohama/museum/tenjishitsu.htm' target='ref'>資料展示室「クイーンのひろば」の見学（横浜税関）</a>",
+        "narration": "ここは横浜税関です。",
+        "delay": "5",
+        "spotInfos": [
+          {
+            "title" : "クイーンの塔",
+            "URL" : "<a href='./images/Customs_1.jpg' target='ref'><img src='./images/Customs_1s.jpg' width=300></a>",
+            "description" : ""
+          },
+          {
+            "title" : "旧特別会議室",
+            "URL" : "<a href='./images/Customs_2.jpg' target='ref'><img src='./images/Customs_2s.jpg' width=300></a>",
+            "description" : ""
+          },
+          {
+            "title" : "旧特別会議室案内パネル",
+            "URL" : "<a href='./images/Customs_3.jpg' target='ref'><img src='./images/Customs_3s.jpg' width=300></a>",
+            "description" : ""
+          }
+        ],
+				"map_coordinates": {
+					"map_1": [93.72,-4.74],
+					"map_2": [139.642241, 35.449200]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [93.72,-4.74]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2",
+        "name": "大さん橋",
+        "alias": [
+          "大桟橋",
+          "おおさんばし",
+          "オオサンバシ",
+          "Oosanbashi Pier"
+        ],
+        "image": "<a href='./images/Oosanbashi_0.jpg' target='ref'><img src='./images/Oosanbashi_0s.jpg' width=300></a>",
+        "description": "地上高：15 m<br>",
+        "narration": "ここは大さん橋です。",
+        "delay": "5",
+        "spotInfos": [
+          {
+            "title" : "大さん橋全景",
+            "URL" : "<a href='./images/Oosanbashi_1.jpg' target='ref'><img src='./images/Oosanbashi_1s.jpg' width=300></a>",
+            "description" : ""
+          },
+          {
+            "title" : "大さん橋赤レンガ側",
+            "URL" : "<a href='./images/Oosanbashi_2.jpg' target='ref'><img src='./images/Oosanbashi_2s.jpg' width=300></a>",
+            "description" : ""
+          },
+          {
+            "title" : "大さん橋象の鼻側",
+            "URL" : "<a href='./images/Oosanbashi_3.jpg' target='ref'><img src='./images/Oosanbashi_3s.jpg' width=300></a>",
+            "description" : ""
+          }
+        ],
+				"map_coordinates": {
+					"map_1": [116.96,-5.45],
+					"map_2": [139.647492, 35.451426]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.96,-5.45]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3",
+        "name": "山下公園",
+        "alias": [
+          "やましたこうえん",
+          "ヤマシタコウエン",
+          "Yamashita Park"
+        ],
+        "image": "<a href='./images/YamashitaPark_0.jpg' target='ref'><img src='./images/YamashitaPark_0s.jpg' width=300px border='1'></a>",
+        "description": "関東大震災時の瓦礫などを埋立て造成し、昭和5年（1930）に開園した日本最初の本格的な臨海公園。<br>埋立前の海岸通りに面した海岸は遠浅で、潮が引いて磯場が現れ、潮干狩りや魚釣りが行われていた。<br>埋立てに際しては、最初に護岸が造られ、その内側に瓦礫を入れることにより行われたので、今見られる護岸は当時のもの。",
+        "narration": "ここは山下公園です。",
+        "delay": "5",
+        "spotInfos": [
+          {
+            "title" : "山下公園",
+            "URL" : "<a href='./images/YamashitaPark_1.jpg' target='ref'><img src='./images/YamashitaPark_1s.jpg' width=300></a>",
+            "description" : ""
+          },
+          {
+            "title" : "潮位標尺",
+            "URL" : "<a href='./images/YamashitaPark_2.jpg' target='ref'><img src='./images/YamashitaPark_2s.jpg' width=300></a>",
+            "description" : ""
+          }
+        ],
+				"map_coordinates": {
+					"map_1": [65.76, -6.33],
+					"map_2": [139.649416, 35.446516]
+				},
+        "icon_style": "circle_s02r"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [65.76, -6.33]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4",
+        "name": "山下公園前水質浄化実験海域",
+        "alias": [
+          "Water Purification Experiment Area in front of Yamashita park",
+          "やましたこうえんまえすいしつじょうかじっけんかいいき",
+          "ヤマシタコウエンマエスイシツジョウカジッケンカイイキ"
+        ],
+        "image": "<a href='./images/WaterPurificationExperimentArea_0.jpg' target='ref'><img src='./images/WaterPurificationExperimentArea_0s.jpg' width=300px></a>",
+        "description": "テラスの前、100m位までの海域で、水質浄化に向けた取組みが、平成25年（2013）から横浜市環境科学研究所とJFEスチール（株）との公民連携で行われ、かなりの成果が得られている。<br><a href='https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kankyohozen/kansoku/science/shiryo/youshi.files/0123_20190305.pdf' target='ref'>山下公園前海域の水質浄化に向けた公民連携の取組（横浜市環境科学研究所）</a>",
+        "narration": "ここは山下公園前水質浄化実験海域です。",
+        "delay": "5",
+        "spotInfos": [
+          {
+            "title" : "バルコニー下",
+            "URL" : "<a href='./images/WaterPurificationExperimentArea_1.jpg' target='ref'><img src='./images/WaterPurificationExperimentArea_1s.jpg' width=300></a>",
+            "description" : ""
+          }
+        ],
+				"map_coordinates": {
+					"map_1": [49.82, -6.95],
+					"map_2": [139.650339, 35.446532]
+				},
+        "icon_style": "circle_s02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.82, -6.95]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5",
+        "name": "氷川丸",
+        "alias": [
+          "Hikawa Maru",
+          "ひかわまる",
+          "ヒカワマル"
+        ],
+        "image": "<a href='./images/hikawamaru_0.jpg' target='ref'><img src='./images/hikawamaru_0s.jpg' width=300px border='1'></a>",
+        "description": "1961年から現在地に係留。スクリューは外され、船体は固定されているため、船扱いとはならず、船籍はない。<br>",
+        "narration": "ここは氷川丸です。",
+        "delay": "5",
+        "spotInfos": [
+          {
+            "title" : "",
+            "URL" : "<a href='./images/hikawamaru_1.jpg' target='ref'><img src='./images/hikawamaru_1s.jpg' width=300px border='1'></a>",
+            "description" : "氷川丸側面"
+          },
+          {
+            "title" : "氷川丸後部",
+            "URL" : "<a href='./images/hikawamaru_2.jpg' target='ref'><img src='./images/hikawamaru_2s.jpg' width=300px border='1'></a>",
+            "description" : ""
+          }
+        ],
+        "map_coordinates": {
+          "map_1": [45.03,-3.37],
+          "map_2": [139.651241, 35.446673]
+        },
+          "icon_style": "circle_s02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [45.03,-3.37]
+      }
+    }
+  ]
+}

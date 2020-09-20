@@ -1,0 +1,1329 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "八聖殿歴史散歩_開港時の横浜",
+        "description": "横浜市八聖殿郷土資料館主催の2019年11月度の歴史散歩「『東海道名所之内横浜風景』を片手に開港当時の横浜を散歩する 」のルート。\n「空飛ぶ絵師」と称された浮世絵師の五雲亭貞秀による「東海道名所之内横浜風景」に描かれた場所を訪ねて、開港後、急速に激変していった横浜の姿に触れる。",
+        "style": {
+          "color": "deeppink",
+          "opacity": 0.5,
+          "weight": 6
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            139.631785,
+            35.451122
+          ],
+          [
+            139.632134,
+            35.450685
+          ],
+          [
+            139.632729,
+            35.449886
+          ],
+          [
+            139.633963,
+            35.449886
+          ],
+          [
+            139.633958,
+            35.449693
+          ],
+          [
+            139.634505,
+            35.449693
+          ],
+          [
+            139.63461,
+            35.449593
+          ],
+          [
+            139.635485,
+            35.449169
+          ],
+          [
+            139.635324,
+            35.44888
+          ],
+          [
+            139.635254,
+            35.44878
+          ],
+          [
+            139.635319,
+            35.448736
+          ],
+          [
+            139.635136,
+            35.448435
+          ],
+          [
+            139.635125,
+            35.448382
+          ],
+          [
+            139.635533,
+            35.448133
+          ],
+          [
+            139.635538,
+            35.448076
+          ],
+          [
+            139.63541,
+            35.447923
+          ],
+          [
+            139.635378,
+            35.447871
+          ],
+          [
+            139.635426,
+            35.44784
+          ],
+          [
+            139.635319,
+            35.447639
+          ],
+          [
+            139.635274,
+            35.447572
+          ],
+          [
+            139.635081,
+            35.447398
+          ],
+          [
+            139.635011,
+            35.447341
+          ],
+          [
+            139.634812,
+            35.44717
+          ],
+          [
+            139.63485,
+            35.447118
+          ],
+          [
+            139.635322,
+            35.446856
+          ],
+          [
+            139.635456,
+            35.446803
+          ],
+          [
+            139.635521,
+            35.446934
+          ],
+          [
+            139.63559,
+            35.447065
+          ],
+          [
+            139.635703,
+            35.447245
+          ],
+          [
+            139.635837,
+            35.447498
+          ],
+          [
+            139.636019,
+            35.447813
+          ],
+          [
+            139.636078,
+            35.447922
+          ],
+          [
+            139.636229,
+            35.44821
+          ],
+          [
+            139.636331,
+            35.448337
+          ],
+          [
+            139.636529,
+            35.448634
+          ],
+          [
+            139.636611,
+            35.448723
+          ],
+          [
+            139.636863,
+            35.449073
+          ],
+          [
+            139.636939,
+            35.449151
+          ],
+          [
+            139.636821,
+            35.449226
+          ],
+          [
+            139.636976,
+            35.449379
+          ],
+          [
+            139.63711,
+            35.44958
+          ],
+          [
+            139.637271,
+            35.449527
+          ],
+          [
+            139.638151,
+            35.44909
+          ],
+          [
+            139.638467,
+            35.448902
+          ],
+          [
+            139.639277,
+            35.448505
+          ],
+          [
+            139.639369,
+            35.448439
+          ],
+          [
+            139.6391,
+            35.448076
+          ],
+          [
+            139.639004,
+            35.447945
+          ],
+          [
+            139.638746,
+            35.447613
+          ],
+          [
+            139.639733,
+            35.447097
+          ],
+          [
+            139.639857,
+            35.447045
+          ],
+          [
+            139.640817,
+            35.44656
+          ],
+          [
+            139.641021,
+            35.446459
+          ],
+          [
+            139.640924,
+            35.446363
+          ],
+          [
+            139.640502,
+            35.445829
+          ],
+          [
+            139.640411,
+            35.445711
+          ],
+          [
+            139.640261,
+            35.44551
+          ],
+          [
+            139.64017,
+            35.445335
+          ],
+          [
+            139.640288,
+            35.445313
+          ],
+          [
+            139.64039,
+            35.445256
+          ],
+          [
+            139.640331,
+            35.445151
+          ],
+          [
+            139.640599,
+            35.444985
+          ],
+          [
+            139.640651,
+            35.444928
+          ],
+          [
+            139.64089,
+            35.444824
+          ],
+          [
+            139.640733,
+            35.444773
+          ],
+          [
+            139.640654,
+            35.444673
+          ],
+          [
+            139.640626,
+            35.444608
+          ],
+          [
+            139.640583,
+            35.444471
+          ],
+          [
+            139.640658,
+            35.4444
+          ],
+          [
+            139.640738,
+            35.444319
+          ],
+          [
+            139.640855,
+            35.444261
+          ],
+          [
+            139.640978,
+            35.444314
+          ],
+          [
+            139.641021,
+            35.444341
+          ],
+          [
+            139.641087,
+            35.444362
+          ],
+          [
+            139.641135,
+            35.444283
+          ],
+          [
+            139.641128,
+            35.444185
+          ],
+          [
+            139.641014,
+            35.443995
+          ],
+          [
+            139.641214,
+            35.443896
+          ],
+          [
+            139.641409,
+            35.443734
+          ],
+          [
+            139.641616,
+            35.44362
+          ],
+          [
+            139.64049,
+            35.442172
+          ],
+          [
+            139.640447,
+            35.442155
+          ],
+          [
+            139.640656,
+            35.442015
+          ],
+          [
+            139.641505,
+            35.441568
+          ],
+          [
+            139.64165,
+            35.441493
+          ],
+          [
+            139.642364,
+            35.441109
+          ],
+          [
+            139.64246,
+            35.441056
+          ],
+          [
+            139.643147,
+            35.440715
+          ],
+          [
+            139.643233,
+            35.440667
+          ],
+          [
+            139.643898,
+            35.440444
+          ],
+          [
+            139.644011,
+            35.440374
+          ],
+          [
+            139.644944,
+            35.43971
+          ],
+          [
+            139.645185,
+            35.439815
+          ],
+          [
+            139.645931,
+            35.440169
+          ],
+          [
+            139.646044,
+            35.440213
+          ],
+          [
+            139.646848,
+            35.440597
+          ],
+          [
+            139.646993,
+            35.440659
+          ],
+          [
+            139.648161,
+            35.441292
+          ],
+          [
+            139.648306,
+            35.441367
+          ],
+          [
+            139.648778,
+            35.441546
+          ],
+          [
+            139.649068,
+            35.441668
+          ],
+          [
+            139.650494,
+            35.442233
+          ],
+          [
+            139.650854,
+            35.442356
+          ],
+          [
+            139.651369,
+            35.442513
+          ],
+          [
+            139.651519,
+            35.442557
+          ],
+          [
+            139.651809,
+            35.442662
+          ],
+          [
+            139.652002,
+            35.442723
+          ],
+          [
+            139.65266,
+            35.443029
+          ],
+          [
+            139.652756,
+            35.443125
+          ],
+          [
+            139.651514,
+            35.443938
+          ],
+          [
+            139.651401,
+            35.444016
+          ],
+          [
+            139.651203,
+            35.444134
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.623104,
+          35.459781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "姥ガ石",
+        "description": "姥島、姥ガ島、姥ガ岩とも呼ばれる。かって、埋立前の野毛浦にあった奇岩で、江戸時代末期の多くの名所絵に描かれている。",
+        "spotInfos": [
+          {
+            "title" : "1834年頃の姥ガ石",
+            "URL" : "<a href='./images/edo_602_nogemura-ubashima_u2.jpg' target='ref'><img src='./images/edo_602_nogemura-ubashima_u2_s.jpg' width=390></a>",
+            "author" : "松濤軒斎藤長秋 著[他]",
+            "volume" : "江戸名所図会 7巻 [6]",
+            "publication_year" : "天保5-7(1834-1836)]",
+            "source" : "<a href='http://dl.ndl.go.jp/info:ndljp/pid/2563385' target='ref'>国立国会図書館デジタルコレクション</a>",
+            "description" : "五雲亭貞秀の東海道名所之内横濱風景（1860年）に描かれている石は一つだが、清水浜臣の杉田日記（1807年）には三つの岩が、新編武蔵風土記稿（1829年）の久良岐本牧領戸部村洲乾港には二つの石があると記述されている。江戸名所図会（1834年）にも、二つ描かれている。荒波に砕けて段々と小さくなった。<br>明治5年（1872年）の初代横浜駅開業に向けた埋め立てにより、姥ガ石も埋められた。"
+          },
+          {
+            "title" : "姥ガ石があった場所",
+            "URL" : "<a href='./images/hw10.ubagaiwa_2_GH02393400520m.jpg' target='ref'><img src='./images/hw10.ubagaiwa_2_GH02393400520m_s.jpg' width=390></a>",
+            "description" : "姥ガ石があった場所は、以下の論拠から、桜木町駅前の動く歩道下のエレベータ辺りになると推定されるとのこと。<br><ul class='sidebar_sanpo'><li>野毛の崖下の埋立の際に、陸地と埋立地の間に物流のための水路（桜川）が設けられたが、現在は埋め立てられ新横浜通りとなっているので、その通りよりは海側。<li>古地図での位置関係から、紅葉坂より南側。<li>1863年に象ガ鼻と野毛浦間に架けられた280間（約500m）の橋より海側。<li>1872年に埋立地に設置された内田町の通りより埋立地側。</ul><br>【参考】<br><a href='https://crd.ndl.go.jp/reference/detail?page=ref_view&id=1000252249' target='ref'>桜川（国立国会図書館レファレンス事例詳細）</a><br>"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.631371,
+          35.452211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "弁天通り",
+        "description": "弁天通りは、安政6年（1859年）の横浜開港時に整備された５筋の通りの一つで、当時の本町一丁目（現在の馬車道）から洲干弁天社への参道にあたる。",
+        "spotInfos": [
+          {
+            "title" : "弁天通り入口（洲干弁天社があった側）",
+            "URL" : "<a href='./images/hw30_benten-dori_1_DSC05399.JPG' target='ref'><img src='./images/hw30_benten-dori_1_DSC05399_s.JPG' width=390></a>",
+            "description" : "この場所は開港当時の洲干弁天の社の裏辺りと推定される。"
+          },
+          {
+            "title" : "洲干弁天社があった側から見た現在の弁天通り",
+            "URL" : "<a href='./images/hw30_benten-dori_2_DSC05403m.JPG' target='ref'><img src='./images/hw10.ubagaiwa_2_GH02393400520m_s.jpg' width=390></a>",
+            "description" : ""
+          },
+          {
+            "title" : "すず風舗装",
+            "URL" : "<a href='./images/hw30_benten-dori_3_DSC05402m.JPG' target='ref'><img src='./images/hw30_benten-dori_3_DSC05402m_s.JPG' width=390></a>",
+            "description" : "弁天通り入口にある案内板"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.63458,
+          35.44967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "上州屋旅館跡地",
+        "description": "明治から大正期に回漕業も兼ねていた旅館。当時、外国への渡航手続には時間が掛り、個人で手続きを行うことも難しかったため、旅館に手続の代行を依頼し、宿泊して完了を待った。",
+        "spotInfos": [
+          {
+            "title" : "かって上州屋旅館があったところ",
+            "URL" : "<a href='./images/hw20_joshuuya_DSC05397m.JPG' target='ref'><img src='./images/hw20_joshuuya_DSC05397m_s.JPG' width=390></a>",
+            "description" : "桜木町駅側から弁天橋を渡った右側の角地で、現在はHOTEL RESOLが建っている。"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.634198,
+          35.449633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "横浜貿易新報社跡地",
+        "description": "明治３７年（１９０４）から大正１２年（１９２３）の関東大震災の前までこの場所に神奈川新聞の前身でとなる横浜貿易新報社の本社ビルがあった。社屋の前には新聞が貼られた掲示板が設置されていた。",
+        "spotInfos": [
+          {
+            "title" : "かって横浜貿易新報社があったところ",
+            "URL" : "<a href='./images/hw22_yokohama-boeki-shinpo_DSC05401m.JPG' target='ref'><img src='./images/hw22_yokohama-boeki-shinpo_DSC05401m_s.JPG' width=390></a>",
+            "description" : "横浜新市庁舎のアトリウム付近。新市庁舎の建設に先立ち行われた発掘調査時に横浜貿易新報の基礎が確認された。多数の炭素棒も発掘され、用途は確認されていないが、馬車道のガス灯が電灯に移行する一時期ににアーク灯が用いられていたので、照明用なのかも知れないとのこと。炭素棒は熱を加えると光るが、頻繁に交換が必要。"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.634691,
+          35.450025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "洲干弁天の太鼓橋",
+        "description": "",
+        "spotInfos": [
+          {
+            "title" : "かって太鼓橋があったかも知れないところ",
+            "URL" : "<a href='./images/hw31_taiko-bashi_DSC05404m.JPG' target='ref'><img src='./images/hw31_taiko-bashi_DSC05404m_s.JPG' width=390></a>",
+            "description" : "両側には瓢箪池が広がっていた。"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.635012,
+          35.449444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "太田町通り",
+        "description": "太田町通りは、安政6年（1859年）の横浜開港後に、まだ沼地であった太田屋新田との境界に造られた。",
+        "spotInfos": [
+          {
+            "title" : "現在の太田町通り",
+            "URL" : "<a href='./images/hw40_ootamachi-dori_DSC05407m.JPG' target='ref'><img src='./images/hw40_ootamachi-dori_DSC05407m_s.JPG' width=390></a>",
+            "description" : "太田町通りは平行して走る他の通り（弁天通り、南仲通り、相生町通り、入船通り、常盤町通り）と違い両側にパーキングメータがあり、道幅が車１台分ほど太い。"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.635488,
+          35.448731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "平安堂薬局",
+        "description": "明治3年（1870年）創業の薬局。",
+        "spotInfos": [
+          {
+            "title" : "移転前の平安堂薬局",
+            "URL" : "<a href='./images/50_heiando_DSC05409m.JPG' target='ref'><img src='./images/50_heiando_DSC05409m_s.JPG' width=390></a>",
+            "description" : "2020年1月に馬車道と相生町通りの交差点角に建築の新社屋に移転した。<br>【参考】<br><a href= 'http://www.heiandoo.co.jp/subpage.php?p=11944&f=&nid=' target='ref'>平安堂薬局の歴史</a>（同社HPより）"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.635547,
+          35.448257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "牛馬飲水桶",
+        "description": "明治から大正にかけて馬車道十番館前に設置された",
+        "spotInfos": [
+          {
+            "title" : "移転前の平安堂薬局",
+            "URL" : "<a href='./images/51_gyuuba-nomimizu_1_DSC05412.JPG' target='ref'><img src='./images/51_gyuuba-nomimizu_1_DSC05412_s.JPG' width=390></a>",
+            "description" : "2020年1月に馬車道と相生町通りの交差点角に建築の新社屋に移転した。<br>【参考】<br><a href= 'http://www.heiandoo.co.jp/subpage.php?p=11944&f=&nid=' target='ref'>平安堂薬局の歴史</a>（同社HPより）"
+          },
+          {
+            "title" : "移転前の平安堂薬局",
+            "URL" : "<a href='./images/51_gyuuba-nomimizu_2_DSC05414.JPG' target='ref'><img src='./images/51_gyuuba-nomimizu_2_DSC05414_s.JPG' width=390></a>",
+            "description" : "2020年1月に馬車道と相生町通りの交差点角に建築の新社屋に移転した。<br>【参考】<br><a href= 'http://www.heiandoo.co.jp/subpage.php?p=11944&f=&nid=' target='ref'>平安堂薬局の歴史</a>（同社HPより）"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.634915,
+          35.447357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "六道の辻",
+        "description": "馬車道\n慶応の大火\n太田屋新田、横浜新田が区画整理\n開港時は新田残っていた\n土を入れて碁盤状\n万延元年\n中村川の土砂がたまる\n１５０年\n田んぼ作り始めた→横浜新田\n太田屋新田　周りを囲って沼地\n開港道\n平沼新田、岡野新田の縁\n吉田橋\n左へ下って途中で右へ\n明治３年地番変更\n\n地獄の入口とは関係ない\n実際は７本の道の交差点\n\n\nこちらが太田屋新田の縁\n斜めの道\n大正１２年\n震災\n第8地区\n換地対象\n斜めの道消える　対象４年\n\nhttps://kannai.jp/rokudo/\n",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.634807,
+          35.447134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "日本で最初のガス灯",
+        "description": "明治５年（１８７２）に、大江橋～馬車道、本町通りに日本で最初にガス灯が設置、点灯されたことを記念して、記念碑、壁面レリーフ、当時を復元したガス灯が設置されている。\n横浜都市発展記念館にもガス灯の屋外展示がある。\n\nレリーフには電線が写っているので、その頃は電灯に切り替わっていたかもしれない。\n\n馬車道は、近代街路樹発祥の地。\n尾上町通りとの交差点に碑がある。\n当時は、柳と松が植えられた。\n現在はアキニレ\n\n正金銀行　ドーム\n震災後　四角\n設計図が見つかり再建\n\n\n発電所\n東京電力の支社\nレリーフ有\n石炭火力\n規模が賄えない\n１０年くらいで高島町に移転\n発生殿大正３年パネル　煙突\n第二高島町駅\n浦高島発電所への冷却水として海水を引き込んでいたトンネル\n背中側\n斜めの道残っていた\n明治３年　洲干弁天、野毛浦埋立\n\nこちら側\n道筋と長さ変わっていない\n慶応年間から\n",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.635907,
+          35.447506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "神奈川県電気発祥の地（碑）",
+        "description": "常磐町火力発電所\nhttps://www.kandenkyo.jp/pdf/yukari%20vol16.pdf\nhttp://paconta.cocolog-nifty.com/paconta/2004/05/post.html\nhttp://tadkawakita.sakura.ne.jp/db/?p=219",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.638352,
+          35.445175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "横浜共同電灯裏高島町火力発電所跡",
+        "description": "http://paconta.cocolog-nifty.com/paconta/2004/09/2.html",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.623114,
+          35.462594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ハマの街灯点火の地",
+        "description": "",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.634901,
+          35.447105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "近代街路樹発祥の地",
+        "description": "馬車道に植えられた松と柳が、日本初の街路樹となった。\n現在は、アキニレが植えられている。\n\nhttps://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/doro/anzenshisetsu/yasashii/gairoju/rekishi.html\n",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.634618,
+          35.445741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "旧横浜正金銀行本店",
+        "description": "",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.636377,
+          35.449079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "本町一丁目",
+        "description": "波止場への道\n通の役割分担\n金融、両替、貿易、商社関係→本町通り\n商店→弁天通り\n日本大通り\n運上所、県庁→官庁街\n",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.637253,
+          35.449631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "駿河屋三井／三井物産会社",
+        "description": "\n\n三井物産会社\n５大生糸売込商\n\n現在の三井物産は日本大通り\n日本最古の鉄筋コンクリート造",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.637498,
+          35.449691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "生糸貿易商　中居屋重兵衛店跡",
+        "description": "謎の商人\n万延元年\nアクアカフェ、バードカフェ\n明治前に消える\n妻越　中区　友好都市\n根岸キャベツ　関係ない\n",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.639391,
+          35.448305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "小野商店（小野光景）",
+        "description": "",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.639991,
+          35.447064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "野沢屋（茂木惣兵衛）",
+        "description": "５大生糸売込商",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.639236,
+          35.447172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "亀屋（原善三郎）",
+        "description": "５大生糸売込商\n\n埼玉上川町\n生糸を打って一財を成した\n亀善\n\n",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.637731,
+          35.447922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "澁澤商店（澁澤喜作）",
+        "description": "５大生糸売込商\n渋沢栄一のいとこ\n来年大河ドラマ\n\nなぜ生糸で財をなしたか？\n生糸の一大産地はヨーロッパ\n蚕の伝染病\n生糸産業大打撃\nそのほか　中国（清）\nアヘン戦争、太平天国の乱\n国内乱れて生糸の生産どころではない\nその時期にたまたま日本が開港場\n各藩　アンテナショップ\n例\n越前福井藩\n武士が商売をやってはいけない\n商才のあるもの　脱藩　\n山手　代官坂\n名主　石川徳右衛門\nペリ－の接待　石川家\n石川家　長屋門跡　碑\n石川さんの土地を借りて石川屋\n岡倉　手代　福井藩の物品を販売\nほかの藩も同様\n外国人に目に留まったのが生糸\n日本にすばらしい生糸がある\n良質で伝染病に罹っていない\n海外からシルクを求めてバーと集まって来た\n外貨　船　技術　買って　急激に先進国の仲間入り\n世界のシェアの７５％\n横浜から輸出\n８割ぐらいを５大生糸売込商\n\n\n\n\n\n\n\n\n",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.638625,
+          35.449196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ハート形の敷石",
+        "description": "https://hamarepo.com/story.php?page_no=1&story_id=2764\n公園内に７個\nミッキー",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.640304,
+          35.445134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "横浜公園の歴史（パネル）",
+        "description": "館長\n開港\n立ち合い\n都市発展記念館　青木\n\n",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.64087,
+          35.444791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "噴水",
+        "description": "噴水の真ん中を日本大通りの真ん中に合わせている",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.640656,
+          35.444209
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "港崎遊郭／彼我公園",
+        "description": "太田屋新田がまだ沼だったころ\n港大通り　港崎通り\n渡り廊下\n商店\n堀\n太田町通りを抜けるところ\n\n大門　おおもん\n慶応の大火\n７年\nなぜミオザキと読むの？\nなぜここに遊郭が？\n公使から要求\n英米公使　神奈川宿　神奈川港　\n規模拡大　木戸→中木戸\n幕府　横浜開港\n外国人　懐柔策\n江戸　吉原　京都　島原\n花咲　真金町\n\n彼我　外国人も日本人も\n日本大通り　防火隊\n日本公演\n\nYACA\n根岸　矢口台\nモリソン\nクリケット　港高校\n外国人　レジャー　休日にスポーツで楽しむ\n本国で日常的に行っていたこと\n日本　道場　修行の場\n横浜にスポーツ発祥の地が多い\n誘致したわけではない\n彼我公園の一部を借りてスポーツ\n日本のスポーツ\nYCACのメンバーが指導者としてスポーツが全国に広がる\nYokohama Cricket & Athletic Club\nYokohama Country & Athletic Club\n\n\n\n\n\n\n",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.640218,
+          35.443871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "岩亀楼",
+        "description": "一番大きい遊郭\n雪見橋　移転　料亭として栄える\n三菱造船所\n現在　岩亀横丁\n\n日本庭園\n慶応年間／明治に造られた\n米軍に接収されて教会\n接収解除後再び日本庭園を再建\n燈籠は吉原町の店にあったもの\n\n\n",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.641157,
+          35.444172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "北斗七星",
+        "description": "夜になると光る",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.641472,
+          35.443571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "派大岡川",
+        "description": "石黒　横浜は東洋のベニス\n水運で物流　Ｓ４７頃まで\n派大岡川\n太田屋新田の周りの運河\n水路　使われなくなった\n水を抜いて高速道路\n吉田川　水を抜いて地下鉄\n水運を使った商売　中村川\n",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.640735,
+          35.442041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "堀川",
+        "description": "板金加工場\n船修理\n西の橋\n上流　中村川\n下流　堀川\n元は陸地\n万延元年後半に\n３つの橋\n番所\n出島状態　関内地区\n外国人の殺傷事件\n警備厳重化\n外国人を守るため　一般的な説明\nじっさいは諸説\n外国人の見方\n暮らし　違う\n外国人　記録\n日本人　当たり前のこと　記録なし\n外国人の記録から\n混浴　お歯黒　習慣\nイラメダ　バード\n日本人の昔\nマーガレット　バラ　２０歳\n宣教師の\n神奈川　成仏寺　ヘボン　頼って\n神奈川は危ない\n３方から火\n兵糧攻め\n書簡\n公使　ｎｏ．２　ニール\n高輪　東禅寺\n殺傷事件\n交渉中\n生麦事件\n公武合体\n文久の改革\n公家\n外様\nリチャードソンを非難する人も多い\n礼儀\n追い打ち\nニール　止める\n堀川を意識\nその後を考えると守れるか\n追い打ちではなく交渉\n横浜居留地覚書\n薩英戦争\n軍艦２隻被害\n日本　戦上手\n意識されていること　\n堀川の外に軍隊\n外国人遊歩道\n本牧の原型\n競馬場\nライフル練習場　商店街\n\n横浜新田\n内側にスロープ\n埋立　古い土地\n前田橋\n小松川の入口\n横浜新田と洲干島の境界\n\n\n\n",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.647689,
+          35.440696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ヘボン博士邸跡",
+        "description": "医師、宣教師\n谷戸橋\n元は水町通りに架かっていた\n歩道橋の辺り\n水町通り\n商店街\n海岸通り\n山下公園\n新山下　震災で壊れなかった\n大正３年　堀川を使って救援物資\nグランドホテル　震災で焼失\n横浜の象徴\n港戦争\n東京へ移転運動\n神戸　生糸の権益\n原富太郎（三渓）\n金融と不動産\n生糸はつぶさせないという信念\n暴落時に買取\n関西村\n横浜復興\nグランドホテルに代わる象徴的なものを横浜に造るべきだ\n\n本町通り　古美術　野村洋三\nミスターシェイクハンド\nニューグランドホテル\n進駐軍\n復興のシンボル\n\n\n",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.651734,
+          35.442698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "フランス波止場",
+        "description": "タイムボール\n鉄の棒に２ｍ位のボール\n１２時の５分前に揚げて12時に落とす\n緯度経度を図る\n緯度は古代ギリシャで確立\n経度は陸地ならわかる\n海上では経度は１８世紀後半に時計が発明されるまで図れなかった\n１時間に１５度刻み\n時計ずれてくる\n当初は音\nずれる\n１秒で１５秒ずれう\nロサンゼルス→サンフランシスコ\n東京気象台　12時にぼたん\n失敗したら旗を揚げる\n1時に再実行\n震災前頃までには無線\n",
+        "spotInfos": [
+          {
+            "URL" : "url",
+            "description" : "description",
+            "source" : "source"
+          },
+          {
+            "URL" : "url2",
+            "description" : "description2",
+            "source" : "source2"
+          }
+        ],
+				"icon_style": "triangle_sanpo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.651219,
+          35.444154
+        ]
+      }
+    }
+  ]
+}

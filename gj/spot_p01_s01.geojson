@@ -1,0 +1,519 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9",
+        "name": "大さん橋",
+        "alias": [
+          "大桟橋",
+          "おおさんばし",
+          "オオサンバシ",
+          "Oosanbashi Pier"
+        ],
+        "image": "<a href='./images/Oosanbashi_0.jpg' data-lightbox='s01'><img src='./images/Oosanbashi_0s.jpg' class='spot-img-container'></a>",
+        "description": "地上高：15 m<br>",
+        "spotInfos": [
+          {
+            "title" : "大さん橋全景",
+            "URL" : "<a href='./images/Oosanbashi_1.jpg' data-lightbox='s01'><img src='./images/Oosanbashi_1s.jpg' class='spot-img-container'></a>",
+            "description" : "説明１"
+          },
+          {
+            "title" : "大さん橋赤レンガ側",
+            "URL" : "<a href='./images/Oosanbashi_2.jpg' data-lightbox='s01'><img src='./images/Oosanbashi_2s.jpg' class='spot-img-container'></a>",
+            "description" : "説明２"
+          },
+          {
+            "title" : "大さん橋象の鼻側",
+            "URL" : "<a href='./images/Oosanbashi_3.jpg' data-lightbox='s01'><img src='./images/Oosanbashi_3s.jpg' class='spot-img-container'></a>",
+            "description" : "説明３"
+          }
+        ],
+				"map_coordinates": {
+					"map_1": [116.96,-5.45],
+					"map_2": [139.647492, 35.451426]
+				},
+        "icon_style": "circle_s01r"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.96,-5.45]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7",
+        "name": "ヨコハマグランドインターコンチネンタルホテル",
+        "alias": [
+          "InterContinental Yokohama Grand",
+          "ヨコハマグランドインターコンチネンタルホテル"
+        ],
+        "image": "<a href='./images/InterContinentalYokohamaGrand.jpg' data-lightbox='s01'><img src='./images/InterContinentalYokohamaGrand_s.jpg' class='spot-img-container'></a>",
+        "description": "地上高：140 m、地上31階・地下1階",
+				"map_coordinates": {
+					"map_1": [108.66,-4.74],
+					"map_2": [139.637495, 35.457760]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [108.66,-4.74]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8",
+        "name": "横浜ランドマークタワー",
+        "alias": [
+          "Yokohama Landmark Tower",
+          "ヨコハマランドマークタワー"
+        ],
+        "image": "<a href='./images/LandmarkTower.jpg' data-lightbox='s01'><img src='./images/LandmarkTower_s.jpg' class='spot-img-container'></a>",
+        "description": "地上高：296.33 m、地上70階・地下3階（タワー棟）",
+				"map_coordinates": {
+					"map_1": [103.14,-3.59],
+					"map_2": [139.631455, 35.454959]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.14,-3.59]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6",
+        "name": "大さん橋ふ頭ビル",
+        "alias": [
+          "Oosanbashi Pier Building",
+          "おおさんばしふとうびる",
+          "オオサンバシフトウビル"
+        ],
+        "image": "<a href='./images/OosanbashiPierBuilding.jpg' data-lightbox='s01'><img src='./images/OosanbashiPierBuilding_s.jpg' class='spot-img-container'></a>",
+        "description": "1階は当ビル前の桟橋から発着するクルーズ船の待合スペース",
+				"map_coordinates": {
+					"map_1": [99.58,-2.33],
+					"map_2": [139.646491, 35.449523]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.58,-2.33]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6",
+        "name": "ザ・タワー 横浜北仲",
+        "alias": [
+          "The Tower Yokohama Kitanaka",
+          "ざたわーよこはまきたなか",
+          "ザタワーヨコハマキタナカ"
+        ],
+        "image": "<a href='./images/Tower_Kitanaka.jpg' data-lightbox='s01'><img src='./images/Tower_Kitanaka_s.jpg' class='spot-img-container'></a>",
+        "description": "地上高：199.95 m、地上58階・地下1階",
+				"map_coordinates": {
+					"map_1": [96.20, -3.65],
+					"map_2": [139.635846, 35.451364]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [96.20, -3.65]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6",
+        "name": "神奈川県警察本部",
+        "alias": [
+          "Kanagawaken Police Headquarters",
+          "かながわけんけいさつほんぶ",
+          "カナガワケンケイサツホンブ"
+        ],
+        "image": "<a href='./images/kenkei.jpg' data-lightbox='s01'><img src='./images/kenkei_s.jpg' class='spot-img-container'></a>",
+        "description": "地上高：91.8 m、地上20階・地下3階<br>20階は展望ロビー。事前予約が必要。<br><a href='https://www.police.pref.kanagawa.jp/mes/mesa4001.htm' data-lightbox='s01'>警察本部庁舎見学のご案内（神奈川県警察本部）</a>",
+				"map_coordinates": {
+					"map_1": [95.15, -4.04],
+					"map_2": [139.641046, 35.449980]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [95.15, -4.04]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5",
+        "name": "横浜税関",
+        "alias": [
+          "Yokohama Customs",
+          "よこはまぜいかん",
+          "ヨコハマゼイカン"
+        ],
+        "image": "<a href='./images/Customs_0.jpg' data-lightbox='s01'><img src='./images/Customs_0s.jpg' class='spot-img-container'></a>",
+        "description": "地上高：51.46 m、地上5階<br>1階に資料展示室「クイーンのひろば」。<br><a href='https://www.customs.go.jp/yokohama/museum/tenjishitsu.htm' data-lightbox='s01'>資料展示室「クイーンのひろば」の見学（横浜税関）</a>",
+        "spotInfos": [
+          {
+            "title" : "クイーンの塔",
+            "URL" : "<a href='./images/Customs_1.jpg' data-lightbox='s01'><img src='./images/Customs_1s.jpg' class='spot-img-container'></a>",
+            "description" : "説明１"
+          },
+          {
+            "title" : "旧特別会議室",
+            "URL" : "<a href='./images/Customs_2.jpg' data-lightbox='s01'><img src='./images/Customs_2s.jpg' class='spot-img-container'></a>",
+            "description" : "説明２"
+          },
+          {
+            "title" : "旧特別会議室案内パネル",
+            "URL" : "<a href='./images/Customs_3.jpg' data-lightbox='s01'><img src='./images/Customs_3s.jpg' class='spot-img-container'></a>",
+            "description" : "説明３"
+          }
+        ],
+				"map_coordinates": {
+					"map_1": [93.72,-4.74],
+					"map_2": [139.642241, 35.449200]
+				},
+        "icon_style": "circle_s01r"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [93.72,-4.74]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4",
+        "name": "横浜水上警察署",
+        "alias": [
+          "Kanagawaken Yokohama Aquatic Police Station",
+          "よこはますいじょうけいさつしょ",
+          "ヨコハマスイジョウケイサツショ"
+        ],
+        "image": "<a href='./images/AquaticPoliceStation.jpg' data-lightbox='s01'><img src='./images/AquaticPoliceStation_s.jpg' class='spot-img-container'></a>",
+        "description": "地上4階<br>日本に３つある水上警察署の一つ<br><a href='https://www.police.pref.kanagawa.jp/ps/44ps/44_idx.htm' data-lightbox='s01'>神奈川県横浜水上警察署</a>",
+				"map_coordinates": {
+					"map_1": [88.14,-4.18],
+					"map_2": [139.645452, 35.448354]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [88.14,-4.18]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3",
+        "name": "横浜第二港湾合同庁舎",
+        "alias": [
+          "Yokohama Harbor No.2 Joint Government Office Building",
+          "よこはまだいにこうわんごうどうちょうしゃ",
+          "ヨコハマダイニコウワンゴウドウチョウシャ"
+        ],
+        "image": "<a href='./images/YokohamaHarborNo2JointGovernmentOffice.JPG' data-lightbox='s01'><img src='./images/YokohamaHarborNo2JointGovernmentOffice_s.jpg' class='spot-img-container'></a>",
+        "description": "地上8階<br>横浜検疫所、横浜地方検察庁分室、東京入国管理局横浜支局分室、関東経済産業局横浜通商事務所が入居。<br>屋上に横浜航路の航行信号所が設置（内港信号所）。<br>【参考】<br><a href='https://www.kaiho.mlit.go.jp/03kanku/yokohama/kawasaki/passage/yokohama%20kouro.htm' data-lightbox='s01'>横浜航路における航行管制と情報提供（海上保安庁）</a>",
+				"map_coordinates": {
+					"map_1": [84.67,-3.71],
+					"map_2": [139.645260, 35.448018]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [84.67,-3.71]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3",
+        "name": "横浜パイロットビル",
+        "alias": [
+          "Yokohama pilot Building",
+          "よこはまぱいろっとびる",
+          "ヨコハマパイロットビル"
+        ],
+        "description": "地上6階<br>東京湾水先区水先人会が入居。<br><a href='http://www.tokyobay-pilot.jp/annai.html#label3' data-lightbox='s01'>水先人会のご案内（東京湾水先区水先人会）</a>",
+				"map_coordinates": {
+					"map_1": [82.95,-4.10],
+					"map_2": [139.645856, 35.447646]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [82.95,-4.10]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2",
+        "name": "山下町SSKビル",
+        "alias": [
+          "Yamashita-cho SSK Building",
+          "やましたちょうえすえすけいびる",
+          "ヤマシタチョウエスエスケイエスエスケービル"
+        ],
+        "description": "地上16階",
+				"map_coordinates": {
+					"map_1": [81.60, -3.27],
+					"map_2": [139.644796, 35.446707]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.60,
+          -3.27
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "name": "産業貿易センタービル",
+        "alias": [
+          "Industry & Trade Center Building",
+          "さんぎょうぼうえきせんたーびる",
+          "サンギョウボウエキセンタービル"
+        ],
+        "image": "<a href='./images/Industry&TradeCenterBuilding.jpg' data-lightbox='s01'><img src='./images/Industry&TradeCenterBuilding_s.jpg' class='spot-img-container'></a>",
+        "description": "地上高：50 m、地上11階・地下2階",
+				"map_coordinates": {
+					"map_1": [79.41,-3.76],
+					"map_2": [139.645747, 35.446938]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [79.41,-3.76]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "name": "日土地山下町ビル",
+        "alias": [
+          "Nittochi Yamashita-cho Building",
+          "にっとちやましたちょうびる",
+          "ニットチヤマシタチョウビル"
+        ],
+        "description": "地上高：59.90 m",
+				"map_coordinates": {
+					"map_1": [77.80,-3.18],
+					"map_2": [139.645449, 35.446361]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.80,-3.18]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "11",
+        "name": "NHK横浜放送局",
+        "alias": [
+          "NHK Yokohama Broadcasting Center",
+          "えぬえいちけいよこはまほうそうきょく",
+          "エヌエイチケイヨコハマホウソウキョク"
+        ],
+        "image": "<a href='./images/NHK_Yokohama.JPG' data-lightbox='s01'><img src='./images/NHK_Yokohama_s.jpg' class='spot-img-container'></a>",
+        "description": "地上高（施設）：50 m、地上高（含アンテナ）：105 m",
+				"map_coordinates": {
+					"map_1": [73.35,-2.08],
+					"map_2": [139.646293, 35.445301]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.35,-2.08]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "name": "神奈川県民ホール",
+        "alias": [
+          "Kanagawa Kenmin Hall",
+          "かながわけんみんほーる",
+          "カナガワケンミンホール"
+        ],
+        "description": "",
+				"map_coordinates": {
+					"map_1": [71.00,-3.84],
+					"map_2": [139.647218, 35.446177]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [71.00,-3.84]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "12a",
+        "name": "ホテルモントレ横浜",
+        "alias": [
+          "Hotel Monterey Yokohama",
+          "ほてるもんとれよこはま",
+          "ホテルモントレヨコハマ"
+        ],
+        "description": "地上13階",
+				"map_coordinates": {
+					"map_1": [66.46,-3.38],
+					"map_2": [139.647878, 35.445711]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [66.46,-3.38]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "12b",
+        "name": "ホテルニューグランド",
+        "alias": [
+          "Hotel New Grand",
+          "ほてるにゅーぐらんど",
+          "ホテルニューグランド"
+        ],
+        "image": "<a href='./images/Hotel_New_Grand.jpg' data-lightbox='s01'><img src='./images/Hotel_New_Grand_s.jpg' class='spot-img-container'></a>",
+        "description": "地上5階（本館）、地上18階・地下5階（ニューグランドタワー）",
+				"map_coordinates": {
+					"map_1": [59.54, -1.74],
+					"map_2": [139.649292, 35.444992]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.54,
+          -1.74
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "13",
+        "name": "スターホテル横浜",
+        "alias": [
+          "Star Hotel Yokohama",
+          "すたーほてるよこはま",
+          "スターホテルヨコハマ"
+        ],
+        "description": "",
+				"map_coordinates": {
+					"map_1": [55.40,-4.57],
+					"map_2": [139.650216, 35.444560]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [55.40,-4.57]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "14",
+        "name": "横浜マリンタワー",
+        "alias": [
+          "Yokohama Marine Tower",
+          "よこはままりんたわー",
+          "ヨコハママリンタワー"
+        ],
+       "image": "<a href='./images/MarinTower.jpg' data-lightbox='s01'><img src='./images/MarinTower_s.jpg' class='spot-img-container'></a>",
+       "description": "地上高：106 m<br>改修工事のため全館休館中。営業再開は2022年4月以降。",
+       "map_coordinates": {
+        "map_1": [53.38,-2.11],
+        "map_2": [139.650936, 35.444049]
+      },
+      "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [53.38,-2.11]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "16",
+        "name": "コクサイエアロマリン(株) 山下埠頭倉庫",
+        "alias": [
+          "Kokusai Aeromarine Yamashita Pier Warehouse",
+          "こくさいえあろまりんやましたふとうそうこ",
+          "コクサイエアロマリンヤマシタフトウソウコ"
+        ],
+        "description": "",
+				"map_coordinates": {
+					"map_1": [29.15, -4.80],
+					"map_2": [139.656205, 35.446753]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.15, -4.80]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "17",
+        "name": "キョクレイ 山下物流センター",
+        "alias": [
+          "Kyokurei Yamashita Distribution Center",
+          "きょくれいやましたぶつりゅうせんたー",
+          "キョクレイヤマシタブツリュウセンター"
+        ],
+        "description": "",
+				"map_coordinates": {
+					"map_1": [22.24,-4.65],
+					"map_2": [139.656174, 35.448114]
+				},
+        "icon_style": "circle_s01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [22.24,-4.65]
+      }
+    }
+  ]
+}

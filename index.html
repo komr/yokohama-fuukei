@@ -1,0 +1,1406 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="lib/leaflet/leaflet.css" rel="stylesheet">
+    <script src="lib/leaflet/leaflet.js"></script>
+    <title>横浜風景</title>
+
+    <style>
+        html,
+        body,
+        #map,
+        .map,
+        .map2 {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map,
+        #map_1,
+        #map_2 {
+            background-color: #000;
+        }
+
+        .map.map,
+        .map2.map2 {
+            background-color:black;
+        }
+
+        .map,
+        .map2 {
+            float: left;
+            display:none;
+            width: 100%;
+        }
+
+        #map_1 {
+            height: 50%;
+            float: left;
+            width: 100%;
+        }
+
+        #map_2 {
+            height: 50%;
+            float: left;
+            width: 100%;
+        }
+
+        #map_1860_tyf {
+            height: 100%;
+            float: left;
+            width: 100%;
+        }
+
+        .jsFrameRoot {
+            z-index:9999999 !important;
+        }
+
+        #sidepanel,
+        #sidepanel_2 {
+            height: calc(100% - 10px);
+            /* margin-left: 75%; */
+            margin-left: calc(100% - 400px);
+            background-color: #fff;
+            display: none;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        #sidepanel-close-button,
+        #sidepanel-close-button_2 {
+            background-color: red;
+            font-weight: bold;
+            position: absolute;
+            right: 3px;
+            top: 3px;
+        }
+
+        #sidepanel-content,
+        #sidepanel-content_2 {
+            height: 100vh;
+            margin-top: 10px;
+            overflow: auto;
+        }
+
+        #sidepanel-content .spot-img-container {
+            width: 400px;
+        }
+
+        #spot-info-title {
+            font-weight: bold;
+        }
+
+        #help_button_1,
+        #help_button_2,
+        #credit_button,
+        #scrollEnd,
+        #scrollButton,
+        #scrollStart,
+        #MusicButton,
+        #SingleWindowButton,
+        #SingleWindowButton_2 {
+            border: 2px;
+            border-style: solid;
+            border-color: #9edc4d;
+        }
+
+        #SingleWindowButton {
+            position:absolute;
+            top:140px;
+            left: 15px;
+            z-index: 9999;
+        }
+
+        #SingleWindowButton_2 {
+            position:absolute;
+            top: 140px;
+            left: 15px;
+            z-index: 9999;
+        }
+
+       .activated-button {
+            background-color: #9edc4d;
+            color: #000;
+        }
+
+        .circle_kaikou_mae {
+            background-color: aqua;
+            border-color: blue;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_kaikou_chokugo {
+            background-color: yellow;
+            border-color: green;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_sunago {
+            width: 10px;
+            height: 10px;
+            background-color: aqua;
+            border-color: black;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_edo {
+            width: 10px;
+            height: 10px;
+            background-color: aqua;
+            border-color: purple;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_t53 {
+            width: 10px;
+            height: 10px;
+            background-color: aqua;
+            border-color: green;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_ss {
+            width: 10px;
+            height: 10px;
+            background-color: aqua;
+            border-color: orange;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_m53 {
+            width: 10px;
+            height: 10px;
+            background-color: aqua;
+            border-color: olive;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_100edo {
+            width: 10px;
+            height: 10px;
+            background-color: aqua;
+            border-color: yellow;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_f36 {
+            width: 10px;
+            height: 10px;
+            background-color: aqua;
+            border-color: darkorange;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_at {
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+            border-color: blue;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_ym {
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+            border-color: green;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_yh {
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+            border-color: darkorange;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_ky {
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+            border-color: darkslategray;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_ykk {
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+            border-color: purple;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .square_tsh {
+            width: 10px;
+            height: 10px;
+            background-color: greenyellow;
+            border-color: #003300;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .triangle_sanpo {
+            width: 0px !important;
+            height: 0px !important;
+            border-top: solid 20px #ff0000;
+            border-bottom: solid 0px transparent;
+            border-left: solid 5px transparent;
+            border-right: solid 5px transparent;
+        }
+
+        #mapChanger {
+            position: absolute;
+            z-index: 99999;
+            top: 12px;
+            right: 240px;
+        }
+
+        #mapChanger_2 {
+            position: absolute;
+            z-index: 99999;
+            top: 12px;
+            right: 240px;
+        }
+        .current-map,
+        .current-map_2 {
+            display: block;
+        }
+
+        #mapChanger,
+        #mapChanger_2 {
+            background-color: aquamarine;
+        }
+
+        #mapChanger option, 
+        #mapChanger_2  option {
+            background-color: white;
+        }
+
+
+        .circle_s01 {
+            width: 10px;
+            height: 10px;
+            background-color: #FFFF0077;
+            border-color: blue;
+            /* border-color: #FF00FF77; */
+            /* display:none; */
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_s01r {
+            width: 10px;
+            height: 10px;
+            background-color: #FFFF0077;
+            border-color: red;
+            /* border-color: #FF00FF77; */
+            /* display:none; */
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_s02 {
+            width: 10px;
+            height: 10px;
+            background-color: aqua;
+            border-color: blue;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_s02r {
+            width: 10px;
+            height: 10px;
+            background-color: aqua;
+            border-color: red;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        }
+
+        .circle_cruise {
+            background-color: blue;
+            border-color: white;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 1px;
+            opacity: 1;
+        }
+
+        /* .leaflet-popup-content {
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+            border-color: purple;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            opacity: 1;
+        } */
+
+        #guideChanger {
+            position: absolute;
+            z-index: 99999;
+            top: 12px;
+            left: 50px;
+        }
+
+        .button {
+            text-align: left;
+            width: 300px;
+            background-color: rgb(201, 233, 183);
+            transform: rotate(0deg);
+        }
+
+        #help_sidebar_template {
+            display: none;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .credit_sidebar_content {
+            display: none;
+        }
+
+        .scroll-controls {
+            position: absolute;
+            bottom: 0;
+            z-index: 99999;
+            text-align: center;
+            padding-bottom: 15px;
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .scroll-controls label {
+            font-weight: bold;
+            color: white;
+        }
+
+/*
+        .singlewindow-control_2 {
+            position: absolute;
+            bottom: 0;
+            z-index: 99999;
+            text-align: center;
+            padding-bottom: 15px;
+            width: 100%;
+            vertical-align: middle;
+        }
+*/
+        .singlewindow-control_2 label {
+            font-weight: bold;
+            color: white;
+        }
+
+        .spot-label-container {
+            display: inline-flex;
+        }
+
+        .spot-label-container div {
+            position: relative;
+            background-color: #ffffff77;
+            top: -5px;
+            left: calc(-100% - 5px);
+            /* Show on the left */
+            /* left: 20px; Show on the right*/
+            /* Also set in the reverse checkbox event handler */
+            border-radius: 20px;
+            padding: 3px;
+            white-space: nowrap;
+            color: blue;
+            box-shadow: none;
+            font-weight: bold;
+        }
+
+        .spot-img-container {
+            width: 300px;
+        }
+
+        /* .leaflet-popup.spot-popup {
+            border-radius: 12px;
+        }
+
+        .leaflet-popup.spot-popup .leaflet-popup-content-wrapper {
+            height: 20px;
+            position: absolute;
+            top: 6px;
+            right: 10px;
+            background-color: #ffffff77;
+            color: blue;
+            box-shadow: none;
+            font-weight: bold;
+        }
+
+        .leaflet-popup.spot-popup .leaflet-popup-content {
+            margin: 0;
+            margin-left: 10px;
+        }
+
+        .leaflet-popup.spot-popup .leaflet-popup-tip-container {
+            display: none;
+        } */
+
+        /* .leaflet-popup-tip-container {
+            display: none;
+        } */
+
+        .leaflet-container .leaflet-control-search {
+            float: right !important;
+        }
+
+        .leaflet-bottom.leaflet-right,
+        .leaflet-control-attribution,
+        .leaflet-control-attribution a {
+            z-index: 999999 !important;
+        }
+    </style>
+
+    <!-- Font Awesome for Leaflet (css) -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/leaflet.awesome-markers.css">
+    <!--<link rel="stylesheet" href="./leaflet.awesome-markers/dist/leaflet.awesome-markers.css">-->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- leaflet.awesome-markers -->
+    <script type="text/javascript" src="js/leaflet.awesome-markers.js"></script>
+    <!--<script type="text/javascript" src="./leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>-->
+
+    <!-- leaflet.responsive.popup.css -->
+    <link rel="stylesheet" href="css/leaflet.responsive.popup.css">
+    <script src="js/leaflet.responsive.popup.js"></script>
+
+    <!-- L.Control.Sidebar -->
+    <link rel="stylesheet" href="css/L.Control.Sidebar.css">
+    <script src="js/L.Control.Sidebar.js"></script>
+
+    <!-- leaflet-search -->
+    <link rel="stylesheet" href="css/leaflet-search.css">
+    <script src="js/leaflet-search.js"></script>
+
+    <!-- Leaflet.Control.Appearance -->
+    <script src="js/L.Control.Appearance.js"></script>
+
+    <!-- jsframe.js -->
+    <script src="https://riversun.github.io/jsframe/jsframe.js"></script>
+    
+    <link rel="stylesheet" href="./CSS/scroll_menu.css" />
+
+    <!-- lightbox2 -->
+    <link rel="stylesheet" href="lib/lightbox2/css/lightbox.css">
+    <script src="lib/lightbox2/js/lightbox.js"></script>
+
+</head>
+
+<body ontouchstart="">
+    <div id="map">
+        <div id="map_1">
+            <nav id="menu-wrap" style=" z-index: 9999;">
+                <ul id="menu">
+                    <!--<ul id="menu" style="width: 98px;">-->
+                    <li style="width:100px"><a href="#">ガイド</a>
+                        <ul>
+                            <li><a href="#">カテゴリー１　≫</a>
+                                <ul>
+                                    <li><a href="#" onclick="showGuide(guide_11);">テーマ１１</a></li>
+                                    <li><a href="#" onclick="showGuide(guide_12);">テーマ１２</a></li>
+                                    <li><a href="#" onclick="showGuide(guide_13);">テーマ１３</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">カテゴリー２　≫</a>
+                                <ul>
+                                    <li><a href="#" onclick="showGuide(guide_21);">テーマ２１</a></li>
+                                    <li><a href="#" onclick="showGuide(guide_22);">テーマ２１</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">カテゴリー３　≫</a>
+                                <ul>
+                                    <li><a href="#" onclick="showGuide(guide_31);">テーマ３１</a></li>
+                                    <li><a href="#" onclick="showGuide(guide_32);">テーマ３１</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <select id="mapChanger" onchange="onMapChange(event);">
+                <option value="map_1656_ysk_mae">1656_吉田新田埋立開墾前横浜図</option>
+                <option value="map_1851_ymkz">1851_横浜村並近傍之図</option>
+                <!--<option value="map_1859_ykm">1859_横浜開港見分図</option>-->
+                <option value="map_1859_ykjz">1859_横浜開港地割之図</option>
+                <option value="map_1860_tyf" style="color:black; background-color: rgb(201, 233, 183);" selected>
+                    1860_東海道名所之内横浜風景</option>
+                <option value="map_1860_ymi" style="color:black; background-color: rgb(201, 233, 183);">1860_横浜名所一覧（海岸）</option>
+                <!--<option value="map_1861_gkyz">1861_御開港横濱之図</option>-->
+                <option value="map_1861_syf" style="color:black; background-color: rgb(201, 233, 183);">1861_再改横浜風景</option>
+                <option value="map_1865_gkyzz" style="color:black; background-color: rgb(201, 233, 183);">1865_御開港横浜之全図</option>
+                <!--<option value="map_1868_ymzz">1868_横濱明細全図</option>-->
+                <option value="map_now" style="color:black; background-color: rgb(201, 233, 183);">現在</option>
+                <option value="map_sanpo" style="color:black; background-color: rgb(201, 233, 183);">散歩</option>
+            </select>
+            <button id="help_button_1" style="position:absolute;top:80px;left: 15px;z-index: 9999;" onclick="help();">?</button>
+            <button id="credit_button" style="position:absolute;top:110px;left: 15px;z-index: 9999;" onclick="frame.show();">©</button>
+            <div class="singlewindow-control">
+                <button id="SingleWindowButton" onclick="toggleSingleWindow();">SingleWindow</button>
+                <!--<button id="FullscreenButton_2" onclick="toggleFullscreen_2();">Windowed-screen</button>-->
+            </div>
+            <div class="scroll-controls">
+                <div>
+                    <input id="scrollPosition" type="range" min="0" max="128" style="width:100%;margin:0;">
+                    <button id="scrollEnd" onclick="scrollToEnd()">|&lt;</button>
+                    <button id="scrollButton" onclick="toggleMapScroll();">SCROLL</button>
+                    <button id="scrollStart" onclick="scrollToStart()">&gt;|</button>
+                    <label>　Speed: <input id="scrollSpeed" type="range" min="0.1" value="1.0" max="10"
+                            step="0.1" /></label>
+                    <label>　Reverse:<input id="reverseScroll" type="checkbox" /></label>
+                    <button id="MusicButton" onclick="toggleMusic();">Music</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="map_2">
+            <select id="mapChanger_2" onchange="onMapChange_2(event);">
+                <option value="map_1656_ysk_mae">1656_吉田新田埋立開墾前横浜図</option>
+                <option value="map_1851_ymkz">1851_横浜村並近傍之図</option>
+                <!--<option value="map_1859_ykm">1859_横浜開港見分図</option>-->
+                <option value="map_1859_ykjz">1859_横浜開港地割之図</option>
+                <option value="map_1860_tyf" style="color:black; background-color: rgb(201, 233, 183);">
+                    1860_東海道名所之内横浜風景</option>
+                <option value="map_1860_ymi" style="color:black; background-color: rgb(201, 233, 183);">1860_横浜名所一覧（海岸）</option>
+                <!--<option value="map_1861_gkyz">1861_御開港横濱之図</option>-->
+                <option value="map_1861_syf" style="color:black; background-color: rgb(201, 233, 183);">1861_再改横浜風景</option>
+                <option value="map_1865_gkyzz" style="color:black; background-color: rgb(201, 233, 183);">1865_御開港横浜之全図</option>
+                <!--<option value="map_1868_ymzz">1868_横濱明細全図</option>-->
+                <option value="map_now" style="color:black; background-color: rgb(201, 233, 183);" selected>現在</option>
+                <option value="map_sanpo" style="color:black; background-color: rgb(201, 233, 183);">散歩</option>
+            </select>
+            <button id="help_button_2" style="position:absolute;top:80px;left: 15px;z-index: 9999;"
+                onclick="help();">?</button>
+            <button id="credit_button_2" style="position:absolute;top:110px;left: 15px;z-index: 9999;">©</button>
+            <div class="singlewindow-control_2">
+                <button id="SingleWindowButton_2" onclick="toggleSingleWindow_2();">SingleWindow</button>
+                <!--<button id="FullscreenButton_2" onclick="toggleFullscreen_2();">Windowed-screen</button>-->
+            </div>
+        </div>
+        <div id="sidepanel">
+            <button id="sidepanel-close-button">x</button>
+            <div id="sidepanel-content"></div>
+        </div>
+    </div>
+    <div id="sidebar">
+        <p></p>
+    </div>
+
+    <script src="js/shared.js"></script>
+    <script src="./js/changeMap.js"></script>
+    <script src="./js/map1656YskMae.js"></script>
+    <script src="./js/map1851Ymkz.js"></script>
+    <script src="./js/map1859Ykjz.js"></script>
+    <script src="./js/map1860Tyf.js"></script>
+    <script src="./js/map1860Ymi.js"></script>
+    <script src="./js/map1861Syf.js"></script>
+    <script src="./js/map1865Gkyzz.js"></script>
+    <script src="./js/mapNow.js"></script>
+    <script src="./js/mapSanpo.js"></script>
+
+    <script>
+        var map1 = "";
+        var map2 = "";
+        var current_mapId_1 = "";
+        var current_mapId_2 = "";
+        var previous_mapId_1 = "";
+        var previous_mapId_2 = "";
+        var previous_status_1 = {
+            "map_1656_ysk_mae":{"latlng": [0, 0], "zoom": 0},
+            "map_1851_ymkz":{"latlng": [0, 0], "zoom": 0},
+            "map_1859_ykjz":{"latlng": [0, 0], "zoom": 0},
+            "map_1860_tyf":{"latlng": [0, 0], "zoom": 0},
+            "map_1860_ymi":{"latlng": [0, 0], "zoom": 0},
+            "map_1861_syf":{"latlng": [0, 0], "zoom": 0},
+            "map_1865_gkyzz":{"latlng": [0, 0], "zoom": 0},
+            "map_now":{"latlng": [0, 0], "zoom": 0},
+            "map_sanpo":{"latlng": [0, 0], "zoom": 0}
+        };
+        var previous_status_2 = {
+            "map_1656_ysk_mae":{"latlng": [0, 0], "zoom": 0},
+            "map_1851_ymkz":{"latlng": [0, 0], "zoom": 0},
+            "map_1859_ykjz":{"latlng": [0, 0], "zoom": 0},
+            "map_1860_tyf":{"latlng": [0, 0], "zoom": 0},
+            "map_1860_ymi":{"latlng": [0, 0], "zoom": 0},
+            "map_1861_syf":{"latlng": [0, 0], "zoom": 0},
+            "map_1865_gkyzz":{"latlng": [0, 0], "zoom": 0},
+            "map_now":{"latlng": [0, 0], "zoom": 0},
+            "map_sanpo":{"latlng": [0, 0], "zoom": 0}
+        };
+
+        var maxNativeZoom_1656_ysk_mae = 6, 
+            maxZoom_1656_ysk_mae = 6, 
+            minZoom_1656_ysk_mae = 2,
+            image_width_1656_ysk_mae = 4096, 
+            image_height_1656_ysk_mae = 5632;
+
+        var maxNativeZoom_1851_ymkz = 7, 
+            maxZoom_1851_ymkz = 7, 
+            minZoom_1851_ymkz = 2,
+            image_width_1851_ymkz = 16384, 
+            image_height_1851_ymkz = 12800;
+
+        var maxNativeZoom_1859_ykjz = 7, 
+            maxZoom_1859_ykjz = 7, 
+            minZoom_1859_ykjz = 3,
+            image_width_1859_ykjz = 16384, 
+            image_height_1859_ykjz = 7424;
+
+        var maxNativeZoom_1860_tyf = 8, 
+            maxZoom_1860_tyf = 8, 
+            minZoom_1860_tyf = 3,
+            image_width_1860_tyf = 32768, 
+            image_height_1860_tyf = 4608;
+        var attribution = "<a href='https://www.ndl.go.jp/jp/use/reproduction/index.html' target='_blank'>国立国会図書館デジタルコレクション</a>"
+
+        var maxNativeZoom_1860_ymi = 8, 
+            maxZoom_1860_ymi = 8, 
+            minZoom_1860_ymi = 3,
+            image_width_1860_ymi = 32768, 
+            image_height_1860_ymi = 3840;
+
+        var maxNativeZoom_1861_syf = 8, 
+            maxZoom_1861_syf = 8, 
+            minZoom_1861_syf = 3,
+            image_width_1861_syf = 32768, 
+            image_height_1861_syf = 8576;
+
+        var maxNativeZoom_1865_gkyzz = 7, 
+            maxZoom_1865_gkyzz = 7, 
+            minZoom_1865_gkyzz = 2,
+            image_width_1865_gkyzz = 16384, 
+            image_height_1865_gkyzz = 6144;
+
+        $(function () {
+            $("#mapChanger").trigger("change");
+            $("#mapChanger_2").trigger("change");
+
+//                    var sidebars = [];
+//        
+//                    var options = $("#mapChanger")[0].options;
+//                    console.log(options);
+//                    for (var i = 0; i < options.length; i++) {
+//                        var cln = $("#help_sidebar_template")[0].cloneNode(true);
+//                        var mapRef = options[i].value;
+//        
+//                        cln.id = mapRef + "_sidebar";
+//        
+//                        $("#map_1").append(cln);
+////                        $("body").append(cln);
+//        
+//                        var sidebar = L.control.sidebar(cln.id, {
+//                            position: 'right'
+//                        });
+//        
+//                        window[mapRef].addControl(sidebar);
+//                        sidebars.push(sidebar);
+//                    }
+//        
+//                    $("#help_button").click(function () {
+//                        $(".help_sidebar_content").show();
+//                        $(".credit_sidebar_content").hide();
+//                        for (var i = 0; i < sidebars.length; i++) {
+//                            sidebars[$("#mapChanger")[0].selectedIndex].show();
+//                            //sidebars[i].toggle();
+//                        }
+//                    });
+//        
+//                    $("#credit_button").click(function () {
+//                        $(".help_sidebar_content").hide();
+//                        $(".credit_sidebar_content").show();
+//                        for (var i = 0; i < sidebars.length; i++) {
+//                            sidebars[$("#mapChanger")[0].selectedIndex].show();
+//                            //sidebars[i].toggle();
+//                        }
+//                    });
+//        
+//                    var isHelpShown = localStorage.getItem("isHelpShown");
+//                    if (isHelpShown == null) {
+//                        $("#help_button").click();
+//                        localStorage.setItem("isHelpShown", true);
+//                    }
+//        
+            var queryParams = new URLSearchParams(window.location.search);
+            if (queryParams.has("start")) {
+                var mapId = queryParams.get("start");
+                console.log("mapID:" + mapId);
+                if ($("#mapChanger option[value=" + mapId + "]").length === 1) {
+                    $("#mapChanger").val(mapId);
+                    $("#mapChanger").change();
+                }
+            }
+            var queryParams_2 = new URLSearchParams(window.location.search);
+            if (queryParams_2.has("start")) {
+                var mapId_2 = queryParams_2.get("start");
+                if ($("#mapChanger_2 option[value=" + mapId_2 + "]").length === 1) {
+                    $("#mapChanger_2").val(mapId_2);
+                    $("#mapChanger_2").change();
+                }
+            }
+        });
+
+        function onMapChange(e) {
+//            $(".map").removeClass("current-map");
+//            $("#" + e.target.value).addClass("current-map");
+            if (current_mapId_1 != "") {
+                previous_mapId_1 = current_mapId_1;
+                var  previous_pos = map1.getCenter();
+                var  previous_zoom = map1.getZoom();
+                previous_status_1[current_mapId_1]["latlng"]="[" + previous_pos.lat + "," + previous_pos.lng + "]";
+                previous_status_1[current_mapId_1]["zoom"]=previous_zoom;
+ 
+                console.log("previous_mapId_1:" + previous_mapId_1);
+                console.log("previous_pos:" + previous_pos);
+                console.log("previous_zoom:" + previous_zoom);
+                console.log("previous_status_1:" + previous_status_1[current_mapId_1]["latlng"] + "," + previous_status_1[current_mapId_1]["zoom"]);
+                console.log("previous_status_1[current_mapId_1]['latlng']:" + previous_status_1[current_mapId_1]["latlng"] );
+            }
+            current_mapId_1 = e.target.value;
+            changeMap(current_mapId_1, "map_1");
+            console.log("832 current_mapId_1:" + current_mapId_1);
+//            setTimeout(function () {
+//                window[e.target.value].invalidateSize();
+//            }, 100);
+        }
+
+        function onMapChange_2(e) {
+//            $(".map2").removeClass("current-map_2");
+//            $("#" + e.target.value).addClass("current-map_2");
+            if (current_mapId_2 != "") {
+                previous_mapId_2 = current_mapId_2;
+                var  previous_pos = map2.getCenter();
+                var  previous_zoom = map2.getZoom();
+                previous_status_2[current_mapId_2]["latlng"]="[" + previous_pos.lat + "," + previous_pos.lng + "]";
+                previous_status_2[current_mapId_2]["zoom"]=previous_zoom;
+ 
+                console.log("previous_mapId_2:" + previous_mapId_2);
+                console.log("previous_pos:" + previous_pos);
+                console.log("previous_zoom:" + previous_zoom);
+                console.log("previous_status_2:" + previous_status_2[current_mapId_2]["latlng"] + "," + previous_status_1[current_mapId_1]["zoom"]);
+                console.log("previous_status_2[current_mapId_2]['latlng']:" + previous_status_2[current_mapId_2]["latlng"] );
+            }
+            current_mapId_2 = e.target.value;
+            changeMap(current_mapId_2, "map_2");
+            console.log("856 current_mapId_2:" + current_mapId_2);
+//           setTimeout(function () {
+//                window[e.target.value].invalidateSize();
+//            }, 100);
+        }
+
+        function gotoMap(mapId, lat, lon, zoom, markerContent, originalMapInfo) {
+            $("#mapChanger").val(mapId);
+            $(".map").removeClass("current-map");
+            $("#" + mapId).addClass("current-map");
+
+            setTimeout(function () {
+                var panTimeout = 0;
+                window[mapId].invalidateSize();
+                if (zoom != null) {
+                    window[mapId].setZoom(zoom);
+                    panTimeout = 300;
+                }
+                setTimeout(function () {
+                    window[mapId].panTo(new L.LatLng(lat, lon));
+
+                    if (markerContent != null) {
+                        // var marker = L.marker([lat, lon]).addTo(window[mapId]);
+
+                        var content = decodeURIComponent(escape(atob(markerContent)));
+                        if (originalMapInfo != null) {
+                            var mapInfo = JSON.parse(atob(originalMapInfo));
+                            content += "<button class='button' onclick='gotoMap(\"" + mapInfo.mapId + "\", " + mapInfo.lat + ", " + mapInfo.lon + ")'>Go Back</button>"
+                        }
+
+                        var popup = L.responsivePopup({ hasTip: false })
+                            .setLatLng(new L.LatLng(lat, lon))
+                            .openOn(window[mapId])
+                            .setContent(content);
+                        // marker.bindPopup(popup);
+                    }
+                }, panTimeout);
+            }, 100);
+        }
+
+        function gotoMap_2(mapId_2, lat, lon, zoom, markerContent, originalMapInfo) {
+            $("#mapChanger_2").val(mapId_2);
+            $(".map2").removeClass("current-map_2")
+            $("#" + mapId_2).addClass("current-map_2");
+
+            setTimeout(function () {
+                var panTimeout = 0;
+                window[mapId_2].invalidateSize();
+                if (zoom != null) {
+                    window[mapId_2].setZoom(zoom);
+                    panTimeout = 300;
+                }
+                setTimeout(function () {
+                    window[mapId_2].panTo(new L.LatLng(lat, lon));
+
+                    if (markerContent != null) {
+                        // var marker = L.marker([lat, lon]).addTo(window[mapId]);
+
+                        var content = decodeURIComponent(escape(atob(markerContent)));
+                        if (originalMapInfo != null) {
+                            var mapInfo = JSON.parse(atob(originalMapInfo));
+                            content += "<button class='button' onclick='gotoMap(\"" + mapInfo.mapId_2 + "\", " + mapInfo.lat + ", " + mapInfo.lon + ")'>Go Back</button>"
+                        }
+
+                        var popup = L.responsivePopup({ hasTip: false })
+                            .setLatLng(new L.LatLng(lat, lon))
+                            .openOn(window[mapId_2])
+                            .setContent(content);
+                        // marker.bindPopup(popup);
+                    }
+                }, panTimeout);
+            }, 100);
+        }
+
+        function scrollMap() {
+            let timer = setInterval(function () {
+//                let m = map_1860_tyf;
+                let currentPosition = map1.getCenter();
+                map1.panTo(new L.LatLng(currentPosition.lat, currentPosition.lng + 0.5));
+//                let currentPosition = m.getCenter();
+//                m.panTo(new L.LatLng(currentPosition.lat, currentPosition.lng + 0.5));
+            }
+            // Timer interval in ms
+            , 50);
+
+            // Stop interval
+            // clearInterval(timer);
+        }
+
+        function scrollMap_2() {
+            let timer = setInterval(function () {
+//                let m = map_1860_tyf;
+//                let m = map_1860_tyf_2;
+                let currentPosition = map2.getCenter();
+                map2.panTo(new L.LatLng(currentPosition.lat, currentPosition.lng + 0.5));
+//                let currentPosition = m.getCenter();
+//                m.panTo(new L.LatLng(currentPosition.lat, currentPosition.lng + 0.5));
+            }
+            // Timer interval in ms
+            , 50);
+
+            // Stop interval
+            // clearInterval(timer);
+        }
+
+    </script>
+
+    <script>
+        let scrollTimer = null;
+        const defaultSpeed = 0.2;
+        let singleWindow = "off";
+        let singleWindow_2 = "off";
+        let fullScreen = "off";
+        let fullScreen_2 = "off";
+
+        let guide_11 = "./gj/guide_11.geojson";
+        let guide_12 = "./gj/guide_12.geojson";
+        let guide_13 = "./gj/guide_13.geojson";
+        let guide_21 = "./gj/guide_21.geojson";
+        let guide_22 = "./gj/guide_22.geojson";
+        let guide_31 = "./gj/guide_31.geojson";
+        let guide_32 = "./gj/guide_32.geojson";
+
+        let mapGuideIndicatorMarker = null;
+        let mapGuideIndicatorMarker_2 = null;
+
+        let mapGuideTimer_1 = null;
+
+        const jsFrame = new JSFrame();
+        const frame = jsFrame.create({
+            title: 'ウィンドウ',
+            left: 20, top: 20, width: 500,
+//            left: 20, top: 20, width: 500, height: 350,
+            movable: true,//マウスで移動可能
+            resizable: true,//マウスでリサイズ可能
+            html: '<div id="my_element" style="padding:10px;font-size:12px;color:darkgray;">Contents of window</div>'
+        });
+
+        $("#" + jsFrame.windowManager.parentElement.id).addClass("jsFrameRoot");
+
+
+        function showGuide(guide) {
+            var delay = 0;
+            console.log(guide);
+            $.getJSON(guide, function (data) {
+                var ar_guide = [];
+                console.log(data);
+                var guide_geoj = L.geoJSON(data, {
+                    onEachFeature: function (feature) {
+                        ar_guide.push(feature);
+                        console.log("ar_guide:" + ar_guide);
+                        console.log(feature);
+                        console.log(feature.properties.id);
+                        var html = feature.properties.name + "<br>" + feature.properties.narratione + "<br>" + feature.properties.image;
+                        frame.show();
+                        setTimeout(function () {
+                            var my_element = document.getElementById('my_element');
+                            my_element.innerHTML = html;                        
+                            var latlng_1 = new L.LatLng(
+                                feature.properties.map_coordinates.map_1[1],
+                                feature.properties.map_coordinates.map_1[0]
+                            );
+                            var latlng_2 = new L.LatLng(
+                                feature.properties.map_coordinates.map_2[1],
+                                feature.properties.map_coordinates.map_2[0]
+                            );
+                            map1.panTo(latlng_1);
+                            map2.panTo(latlng_2);
+//                            map_1.panTo(latlng_1);
+//                            map_2.panTo(latlng_2);
+                            guideIndicatorMarker(latlng_1, latlng_2);
+                            // yield* waitFrame(300);
+
+                        }, delay);
+                        delay += 2000;
+                        return ar_guide;
+                    }
+               });
+            });
+        }
+
+        function guideIndicatorMarker(map1latlng, map2latlng) {
+                if (mapGuideIndicatorMarker_2 != null) {
+                    map2.removeLayer(mapGuideIndicatorMarker_2);
+//                    map_2.removeLayer(mapGuideIndicatorMarker_2);
+                }
+                if (mapGuideIndicatorMarker != null) {
+                    map1.removeLayer(mapGuideIndicatorMarker);
+//                    map_1.removeLayer(mapGuideIndicatorMarker);
+                }
+                mapGuideIndicatorMarker = L.circleMarker(map1latlng, {
+                    radius: 30,
+                    animate: true
+                });
+                map1.addLayer(mapGuideIndicatorMarker);
+//                map_1.addLayer(mapGuideIndicatorMarker);
+
+                mapGuideIndicatorMarker_2 = L.circleMarker(map2latlng, {
+                    radius: 30,
+                    animate: true
+                });
+                map2.addLayer(mapGuideIndicatorMarker_2);
+//                map_2.addLayer(mapGuideIndicatorMarker_2);
+            }
+
+        function openGuide(guide) {
+            let mode;
+            let waitingFrames;
+            let request = null;
+
+            function start() {
+                mode = 'normal';
+                waitingFrames = 0;
+                let iter = showGuide(guide);
+                let frame = 0;
+
+                function update() {
+                    request = null;
+                    let r;
+                    switch (mode) {
+                        case 'waitFrame':
+                            waitingFrames--
+                            if (waitingFrames <= 0) {
+                                mode = 'normal';
+                            }
+                            break;
+
+                        default:
+                            r = iter.next();
+                            if (r.value) mode = r.value;
+                    }
+                    frame++;
+                    if (!(r && r.done)) {
+                        request = requestAnimationFrame(update);
+                    }
+                }
+                request = requestAnimationFrame(update);
+            }
+            function stop() {
+                if (request) cancelAnimationFrame(request);
+                request = null
+            }
+
+            function* waitKey(keys) {
+                limitKeys = keys;
+                yield 'waitKey';
+                return lastKey;
+            }
+
+            function* waitFrame(f) {
+                waitingFrames = f;
+                yield 'waitFrame';
+            }
+
+            function* waitFadeOut() {
+                yield 'waitFadeOut';
+            }
+
+            function* waitFadeIn() {
+                yield 'waitFadeIn';
+            }
+
+            function showGuide(guide) {
+                console.log(guide);
+                $.getJSON(guide, function (data) {
+                    console.log(data);
+                    var guide_geoj = L.geoJSON(data, {
+                        onEachFeature: function (feature) {
+                            delay += 1000;
+                            var delay = feature.properties.delay * 1000;
+                            console.log(feature.properties.delay);
+                            console.log(delay);
+                            setTimeout(function () {
+                                var latlng_1 = new L.LatLng(
+                                    feature.properties.map_coordinates.map_1[1],
+                                    feature.properties.map_coordinates.map_1[0]
+                                );
+                                var latlng_2 = new L.LatLng(
+                                    feature.properties.map_coordinates.map_2[1],
+                                    feature.properties.map_coordinates.map_2[0]
+                                );
+                                map1.panTo(latlng_1);
+                                map2.panTo(latlng_2);
+//                                map_1.panTo(latlng_1);
+//                                map_2.panTo(latlng_2);
+                                guideIndicatorMarker(latlng_1, latlng_2);
+                                // yield* waitFrame(300);
+
+                            }, delay);
+                        }
+                    });
+                });
+            }
+
+            start();
+
+            function guideIndicatorMarker(map1latlng, map2latlng) {
+                if (mapGuideIndicatorMarker_2 != null) {
+                    map2.removeLayer(mapGuideIndicatorMarker_2);
+//                    map_2.removeLayer(mapGuideIndicatorMarker_2);
+                }
+                if (mapGuideIndicatorMarker != null) {
+                    map1.removeLayer(mapGuideIndicatorMarker);
+//                    map_1.removeLayer(mapGuideIndicatorMarker);
+                }
+                mapGuideIndicatorMarker = L.circleMarker(map1latlng, {
+                    radius: 30,
+                    animate: true
+                });
+                map1.addLayer(mapGuideIndicatorMarker);
+//                map_1.addLayer(mapGuideIndicatorMarker);
+
+                mapGuideIndicatorMarker_2 = L.circleMarker(map2latlng, {
+                    radius: 30,
+                    animate: true
+                });
+                map2.addLayer(mapGuideIndicatorMarker_2);
+//                map_2.addLayer(mapGuideIndicatorMarker_2);
+            }
+        }
+
+        function help_import() {
+            var result = $.ajax({
+                type: 'GET',
+                url: './ex/help_p01.html',
+                async: false
+            }).responseText;
+            return result;
+        }
+        var help_p01 = help_import();
+
+        function help() {
+            showSidepanel(help_p01)
+        }
+
+        $("#reverseScroll").change(function () {
+            if ($(this).is(":checked")) {
+                $(".spot-label-container div").css("left", '20px');
+            }
+            else {
+                $(".spot-label-container div").css("left", 'calc(-100% - 5px)');
+            }
+        });
+
+        $("#scrollPosition").change(function () {
+//            let m = map_1860_tyf;
+            let currentPosition = map1.getCenter();
+            map1.panTo(new L.LatLng(currentPosition.lat, parseFloat($(this).val())));
+//            let currentPosition = m.getCenter();
+//            m.panTo(new L.LatLng(currentPosition.lat, parseFloat($(this).val())));
+        });
+
+        $("#scrollPosition").mousedown(function () {
+            if (scrollTimer != null) {
+                stopScrolling();
+                setTimeout(function () {
+                    toggleMapScroll();
+                }, 500);
+            }
+        });
+
+        function toggleMapScroll() {
+            if (scrollTimer == null) {
+                $("#scrollButton").addClass("activated-button");
+                scrollTimer = setInterval(function () {
+//                    let m = map1;
+//                    let m = map_1860_tyf;
+                    let currentPosition = map1.getCenter();
+//                    let currentPosition = m.getCenter();
+                   let speed = defaultSpeed * $("#scrollSpeed").val();
+
+                    if ($("#reverseScroll").is(":checked")) {
+                        speed *= -1;
+                    }
+                    map1.panTo(new L.LatLng(currentPosition.lat, currentPosition.lng - speed));
+//                    m.panTo(new L.LatLng(currentPosition.lat, currentPosition.lng - speed));
+
+                    updateScrollLocation();
+
+                    var currentBounds = map1.getBounds();
+//                    var currentBounds = map_1860_tyf.getBounds();
+                    if (Math.floor(currentBounds._southWest.lng) <= 0) {
+                        $("#reverseScroll").prop("checked", true);
+                        $("#reverseScroll").change();
+                    }
+                    else if (Math.ceil(currentBounds._northEast.lng) >= 128) {
+                        $("#reverseScroll").prop("checked", false);
+                        $("#reverseScroll").change();
+                    }
+
+                }, 100);
+            }
+            else {
+                $("#scrollButton").removeClass("activated-button");
+                stopScrolling();
+            }
+        }
+
+        function stopScrolling() {
+            clearInterval(scrollTimer);
+            scrollTimer = null;
+            $("#scrollButton").text("SCROLL")
+        }
+
+        function updateScrollLocation() {
+            $("#scrollPosition").val(map1.getCenter().lng);
+//            $("#scrollPosition").val(map_1860_tyf.getCenter().lng);
+        }
+
+        function scrollToStart() {
+//            let m = map_1860_tyf;
+            let currentPosition = map1.getCenter();
+//            let currentPosition = m.getCenter();
+            let speed = defaultSpeed * $("#scrollSpeed").val();
+            map1.panTo(new L.LatLng(currentPosition.lat, 99999));
+//            m.panTo(new L.LatLng(currentPosition.lat, 99999));
+        }
+
+        function scrollToEnd() {
+//            let m = map_1860_tyf;
+            let currentPosition = map1.getCenter();
+//            let currentPosition = m.getCenter();
+            let speed = defaultSpeed * $("#scrollSpeed").val();
+            map1.panTo(new L.LatLng(currentPosition.lat, 0));
+//            m.panTo(new L.LatLng(currentPosition.lat, 0));
+        }
+
+        function toggleMusic() {
+            // https://www.youtube-nocookie.com/embed/fdKrgN4DYog
+            if ($("#music").length === 0) {
+                $("#MusicButton").addClass("activated-button");
+                //var link = prompt("Youtube embed link");
+                var videoId = "4TbeIl8WERo";
+                var start = 2;
+                $(document.body).append('<iframe id="music" width="0" height="0" style="position:absolute" src="https://www.youtube-nocookie.com/embed/' + videoId + '?autoplay=1&controls=0&rel=0&loop=1&playlist=' + videoId + '&start=' + start + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+            }
+            else {
+                $("#MusicButton").removeClass("activated-button");
+                $("#music").remove();
+            }
+        }
+
+        function toggleSingleWindow() {
+            if (singleWindow == "off") {
+                $("#SingleWindowButton").addClass("activated-button")
+                singleWindow = "on";
+                $("#map_1").css("height", '100%');
+                $("#map_1").css("height", '100%');
+                $("#current_mapId_1").css("height", '100%');
+                $("#current_mapId_2").css("height", '0%');
+                $("#SingleWindowButton").text("SplitWindow")
+
+                console.log(singleWindow);
+                map1._onResize();
+                map2._onResize();
+//                map_1._onResize();
+//                map_2._onResize();
+//                current_mapId_1._onResize();
+//                current_mapId_2._onResize();
+
+            }
+            else {
+                singleWindow = "off";
+                $("#SingleWindowButton").removeClass("activated-button")
+                $("#map_1").css("height", '50%');
+                $("#map_2").css("height", '50%');
+                $("#SingleWindowButton").text("SingleWindow")
+                console.log(singleWindow);
+                map1._onResize();
+                map2._onResize();
+//                map_1._onResize();
+//                map_2._onResize();
+//                current_mapId_1._onResize();
+//                current_mapId_2._onResize();
+            }
+        }
+        function toggleSingleWindow_2() {
+            if (singleWindow_2 == "off") {
+                $("#SingleWindowButton_2").addClass("activated-button")
+                singleWindow_2 = "on";
+                $("#map_1").css("height", '0%');
+                $("#map_2").css("height", '100%');
+                $("#SingleWindowButton_2").text("SplitWindow")
+
+                console.log(singleWindow_2);
+                map1._onResize();
+                map2._onResize();
+            }
+            else {
+                singleWindow_2 = "off";
+                $("#SingleWindowButton_2").removeClass("activated-button")
+                $("#map_1").css("height", '50%');
+                $("#map_2").css("height", '50%');
+                $("#SingleWindowButton_2").text("SingleWindow")
+                console.log(singleWindow_2);
+                map1._onResize();
+                map2._onResize();
+                //map_2._onResize();
+            }
+        }
+
+        function showSidepanel(html) {
+            //$("#map_1").css("width", "75%");
+            //$("#map_2").css("width", "75%");
+            $("#map_1").css("width", 'calc(100% - 400px)');
+            $("#map_2").css("width", 'calc(100% - 400px)');
+            $("#sidepanel").show();
+            $("#sidepanel-content").html(html);
+        }
+
+        function closeSidepanel() {
+            $("#map_1").css("width", "100%");
+            $("#map_2").css("width", "100%");
+            $("#sidepanel-content").html("");
+            $("#sidepanel").hide();
+            map1._onResize();
+            map2._onResize();
+        }
+
+        $(function () {
+            document.onfullscreenchange = function (e) {
+                if (document.fullscreenElement) {
+                    console.log("Entering full screen")
+                }
+                else {
+                    console.log("Leaving full screen")
+                }
+            }
+
+            $("#sidepanel-close-button").click(function () {
+                closeSidepanel();
+            });
+
+            setTimeout(function () {
+                $("#scrollPosition").val(map1.getCenter().lng);
+                map1.setZoom(5);
+//                $("#scrollPosition").val(map_1.getCenter().lng);
+//                map_1.setZoom(5);
+            }, 500);
+        });
+
+
+
+
+    </script>
+
+    <script src="js/attribution.js"></script>
+    <script src="lib/google-analytics.js"></script>
+</body>
+
+</html>
